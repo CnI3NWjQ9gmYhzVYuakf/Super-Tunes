@@ -14,20 +14,4 @@ window.WebKitMutationObserver||window.MozMutationObserver,O=function(){var a=doc
 !u;var ka=/mobile/i.test(k),la=/Windows NT 6.1/i.test(k)&&/rv:11/i.test(k),ca=u&&(/Version\/8/i.test(k)||/Version\/9/i.test(k));k=(G||u||la)&&!ka;var ba=!1;try{window.addEventListener("test",null,Object.defineProperty({},"passive",{get:function(){ba=!0}}))}catch(a){}u=ba?{passive:!1}:!1;var L="onwheel"in document.createElement("div")?"wheel":"mousewheel";L&&k&&(window.addEventListener(L,R,u||!1),window.addEventListener("mousedown",U,!1),window.addEventListener("load",C,!1));y.destroy=function(){z&&
 z.disconnect();window.removeEventListener(L,R,!1);window.removeEventListener("mousedown",U,!1);window.removeEventListener("keydown",M,!1);window.removeEventListener("resize",w,!1);window.removeEventListener("load",C,!1)};window.SmoothScrollOptions&&y(window.SmoothScrollOptions);"function"===typeof define&&define.amd?define(function(){return y}):"object"==typeof exports?module.exports=y:window.SmoothScroll=y})();
 
-                  var e = ['🏻', '🏼', '🏽', '🏾', '🏿'];
-
-    function loop() {
-        var s = '',
-            i, m;
-
-        for (i = 0; i < 10; i ++) {
-            m = Math.floor(e.length * ((Math.sin((Date.now()/100) + i)+1)/2));
-            s += '👶' + e[m];
-        }
-
-        location.hash = s;
-
-        setTimeout(loop, 50);
-    }
-
-    loop();
+   
